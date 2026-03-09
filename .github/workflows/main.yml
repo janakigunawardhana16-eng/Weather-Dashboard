@@ -1,22 +1,50 @@
 name: CI Pipeline
+ janakigunawardhana16-eng-patch-1
+
+
+ main
 on:
   push:
     branches: [ main, develop, feature/* ]
   pull_request:
     branches: [ main, develop ]
+    janakigunawardhana16-eng-patch-1
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+main
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
+ janakigunawardhana16-eng-patch-1
     - name: Install dependencies
       run: npm install || echo "No dependencies"
     - name: Build project
       run: npm run build || echo "Build skipped"
     - name: Run tests
       run: npm test || echo "Tests skipped"
+
+
+    - name: Install dependencies
+      run: npm install || echo "No dependencies"
+
+    - name: Build project
+      run: npm run build || echo "Build skipped"
+
+    - name: Run tests
+      run: npm test || echo "Tests skipped"
+
+ main
