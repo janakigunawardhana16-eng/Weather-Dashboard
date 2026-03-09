@@ -1,5 +1,8 @@
 # 🌦️ Weather Dashboard
 
+A simple web-based weather dashboard that allows users to check weather information and interact with a responsive UI. The application demonstrates Git branching strategies, CI/CD pipelines with GitHub Actions, and cloud deployment using Vercel.
+
+
 ## 📌 Technologies Used
 - HTML5  
 - CSS3  
